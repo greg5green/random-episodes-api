@@ -2,7 +2,7 @@ const express = require('express');
 const helmet = require('helmet');
 const path = require('path');
 const logger = require('morgan');
-const v1 = require('./api/v1/routes');
+const v1 = require('./routes/v1');
 
 const app = express();
 

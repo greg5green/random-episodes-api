@@ -1,8 +1,8 @@
 const express = require('express');
-const indexController = require('../controllers');
+const series = require('./series');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
-router.get('/test', indexController.index);
+router.use('/series', series);
 
 module.exports = router;
